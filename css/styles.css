@@ -1,0 +1,363 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Ubuntu+Mono&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, p, h2{
+    margin: 0;
+}
+header {
+    background: #003580;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 1rem;
+}
+
+header .search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    color: #003580;
+}
+header .search .btns {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+header .search input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #003580;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .search .btn-icon{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header .search .btn{
+    background: #003580;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+main{
+    min-height: calc(100vh - 83px);
+    position: relative;
+}
+main .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+main .background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .details{
+    padding: 8rem;
+    color: #ffffff;
+}
+main .details h1{
+    font-size: 83px;
+}
+
+main .details p{
+    font-size: 24px;
+    font-weight: 500;
+    width: 33%;
+}
+
+main .details .btn{
+    background: #003580;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+main .social{
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+    color: #fff;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+main .social a{
+    color: #fff;
+}
+
+main .social .links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .social .border{
+    width: 2px;
+    height: 20rem;
+    background: #fff;
+}
+
+
+
+.about .details{
+    padding: 2rem 8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .details p {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.5;
+    background: #00358021;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.our-team {
+    padding: 2rem 12rem;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    flex: 1;
+}
+
+.our-team .title{
+    font-size: 48px;
+}
+
+.our-team .team{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.our-team .member{
+    display: flex;
+    background: #00358054;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    width: 100%;
+    font-size: 12px;
+}
+.our-team .member h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+.our-team .member div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.our-team .member div p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.our-team .member button{
+    background: #003580;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .details {
+    padding: 2rem 8rem;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.contact .details form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #00358067;
+    padding: 2rem;
+    width: 50%;
+    border-radius: 6px;
+    color: #fff;
+}
+.contact .details form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact .details form div input{
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+.contact .details form div textarea{
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+
+
+.home .details-recommendations {
+    display: flex;
+    gap: 16rem;
+    justify-content: space-between;
+    padding: 8rem;
+    color: #ffffff;
+}
+
+
+.home .details-recommendations .btn{
+    background: #003580;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.home .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+.home .left h1{
+    font-size: 83px;
+    text-transform: uppercase;
+}
+
+.home .left p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.home .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home .right .recommendations{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home .right .recommendations .recommendation{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+
+}
+
+.home .right .recommendations .recommendation .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    background: #fff;
+    color: #222;
+    padding: 1rem;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 0 10px 0 #00000021;
+}
+
+.home .right .recommendations .recommendation .content h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.home .right .recommendations .recommendation .content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #5f5f5f;
+}
+
+.home .right .recommendations .recommendation .image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
